@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 14:15:05 2020
+# Process ID: 20240
+# Current directory: C:/Users/DELL/Desktop/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3000 C:\Users\DELL\Desktop\Camera_Demo\Camera_Demo.xpr
+# Log file: C:/Users/DELL/Desktop/Camera_Demo/vivado.log
+# Journal file: C:/Users/DELL/Desktop/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/hdmi_num_test.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num0.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num1.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num2.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num3.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num4.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num5.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num6.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num7.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num8.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num9.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/DELL/Desktop/Camera_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 830.957 ; gain = 206.984
+update_compile_order -fileset sources_1
+close_project
+create_project project_1 E:/project_1 -part xc7s15ftgb196-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1229.344 ; gain = 0.000
+file mkdir E:/project_1/project_1.srcs/sources_1/new
+close [ open E:/project_1/project_1.srcs/sources_1/new/Num_recognition_master.v w ]
+add_files E:/project_1/project_1.srcs/sources_1/new/Num_recognition_master.v
+update_compile_order -fileset sources_1
+add_files -norecurse {E:/project_1/project_1.srcs/sources_1/new/num8.v E:/project_1/project_1.srcs/sources_1/new/Driver_Csi_To_Dvp.v E:/project_1/project_1.srcs/sources_1/new/num9.v E:/project_1/project_1.srcs/sources_1/new/grey_transform.v E:/project_1/project_1.srcs/sources_1/new/num6.v E:/project_1/project_1.srcs/sources_1/new/num7.v E:/project_1/project_1.srcs/sources_1/new/rise_check.v E:/project_1/project_1.srcs/sources_1/new/num4.v E:/project_1/project_1.srcs/sources_1/new/num5.v E:/project_1/project_1.srcs/sources_1/new/num2.v E:/project_1/project_1.srcs/sources_1/new/num3.v E:/project_1/project_1.srcs/sources_1/new/num_recognition.v E:/project_1/project_1.srcs/sources_1/new/num0.v E:/project_1/project_1.srcs/sources_1/new/Driver_Bayer_To_RGB.v E:/project_1/project_1.srcs/sources_1/new/Num_recognition_master.v E:/project_1/project_1.srcs/sources_1/new/num1.v E:/project_1/project_1.srcs/sources_1/new/Trigger_Generator.v E:/project_1/project_1.srcs/sources_1/new/hdmi_num_test.v E:/project_1/project_1.srcs/sources_1/new/Driver_IIC.v E:/project_1/project_1.srcs/sources_1/new/OV5647_Init.v E:/project_1/project_1.srcs/sources_1/new/Driver_MIPI.v E:/project_1/project_1.srcs/sources_1/new/rgb_transform.v}
+WARNING: [filemgmt 56-12] File 'E:/project_1/project_1.srcs/sources_1/new/Num_recognition_master.v' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  E:/project_1/project_1.srcs/sources_1/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project_1/project_1.srcs/sources_1/ip'.
+set_property  ip_repo_paths  {e:/project_1/project_1.srcs/sources_1/ip E:/project_1/project_1.srcs/sources_1/ip/RAM_Line E:/project_1/project_1.srcs/sources_1/ip/AXIS_Data_RAM E:/project_1/project_1.srcs/sources_1/ip/clk_wiz_0 E:/project_1/project_1.srcs/sources_1/ip/clk_wiz_1 E:/project_1/project_1.srcs/sources_1/ip/csi2_d_phy_rx_0 E:/project_1/project_1.srcs/sources_1/ip/csi_to_axis_0 E:/project_1/project_1.srcs/sources_1/ip/rgb2dvi_0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project_1/project_1.srcs/sources_1/ip'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/project_1/project_1.srcs/sources_1/ip/RAM_Line'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/project_1/project_1.srcs/sources_1/ip/AXIS_Data_RAM'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/project_1/project_1.srcs/sources_1/ip/clk_wiz_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/project_1/project_1.srcs/sources_1/ip/clk_wiz_1'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/project_1/project_1.srcs/sources_1/ip/csi2_d_phy_rx_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/project_1/project_1.srcs/sources_1/ip/csi_to_axis_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/project_1/project_1.srcs/sources_1/ip/rgb2dvi_0'. The path is contained within another repository.
+update_ip_catalog -add_ip E:/project_1/project_1.srcs/sources_1/ip/RAM_Line/RAM_Line.xml -repo_path e:/project_1/project_1.srcs/sources_1/ip/RAM_Line
+CRITICAL WARNING: [IP_Flow 19-2246] Failed to add IP 'E:/project_1/project_1.srcs/sources_1/ip/RAM_Line/RAM_Line.xml' to repository 'e:/project_1/project_1.srcs/sources_1/ip/RAM_Line' because the specified repository is not valid.
+0
+close_project
+open_project C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/DELL/Desktop/Camera_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+close [ open C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num_recognition_master.v w ]
+add_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num_recognition_master.v
+update_compile_order -fileset sources_1
+set_property top num_recognition_master [current_fileset]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v] -no_script -reset -force -quiet
+remove_files  C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/hdmi_num_test.v -to_files C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/hdmi_num_test.v -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/hdmi_num_test.v' with file 'C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/hdmi_num_test.v'.
+update_files -from_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num0.v -to_files C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num0.v -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num0.v' with file 'C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num0.v'.
+update_files -from_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num1.v -to_files C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num1.v -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num1.v' with file 'C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num1.v'.
+update_compile_order -fileset sources_1

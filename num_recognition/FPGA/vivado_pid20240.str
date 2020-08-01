@@ -1,0 +1,920 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 20240
+License: Customer
+
+Current time: 	Thu Jul 30 14:15:17 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 19 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	DELL
+User home directory: C:/Users/DELL
+User working directory: C:/Users/DELL/Desktop/Camera_Demo
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2018.3
+RDI_DATADIR: D:/Vivado/2018.3/data
+RDI_BINDIR: D:/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/DELL/Desktop/Camera_Demo/vivado.log
+Vivado journal file location: 	C:/Users/DELL/Desktop/Camera_Demo/vivado.jou
+Engine tmp dir: 	C:/Users/DELL/Desktop/Camera_Demo/.Xil/Vivado-20240-DESKTOP-JNDMASU
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2018.3
+XILINX_SDK: D:/SDK/2018.3
+XILINX_VIVADO: D:/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 645 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 86 MB (+87643kb) [00:00:06]
+// [Engine Memory]: 572 MB (+448416kb) [00:00:06]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\DELL\Desktop\Camera_Demo\Camera_Demo.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 654 MB. GUI used memory: 48 MB. Current time: 7/30/20, 2:15:20 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 729 MB (+134712kb) [00:00:21]
+// [GUI Memory]: 102 MB (+12440kb) [00:00:22]
+// [Engine Memory]: 797 MB (+32369kb) [00:00:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  7472 ms.
+// Tcl Message: open_project C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/DELL/Desktop/Camera_Demo/IP_Core'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 804 MB. GUI used memory: 58 MB. Current time: 7/30/20, 2:15:35 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2703 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 830.957 ; gain = 206.984 
+// Project name: Camera_Demo; location: C:/Users/DELL/Desktop/Camera_Demo; part: xc7s15ftgb196-1
+// [Engine Memory]: 1,007 MB (+179055kb) [00:00:31]
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 118 MB (+10822kb) [00:00:37]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 84 seconds
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/hdmi_num_test.v'.", 0); // b (D, a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num0.v'.", 1); // b (D, a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/hdmi_num_test.v'.", 0); // b (D, a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+// Elapsed time: 30 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/hdmi_num_test.v'.. ]", 2, true); // ah (Q, cp) - Node
+// Elapsed time: 73 seconds
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "Camera_Demo"); // h (Q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// 'dy' command handler elapsed time: 3 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  4031 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,056 MB. GUI used memory: 75 MB. Current time: 7/30/20, 2:19:08 PM CST
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.RTLOptionsPanel_SELECT_TOP_MODULE_OF_YOUR_DESIGN, (String) null); // q (ah, F)
+// bx (F):  Analyze source files for top modules : addNotify
+// [GUI Memory]: 141 MB (+18850kb) [00:04:05]
+// Q (F): Select Top Module: addNotify
+dismissDialog("Select Top Module"); // Q (F)
+dismissDialog("Settings"); // F (cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), clk_10 : clk_wiz_0 (clk_wiz_0.xci)]", 3); // B (D, cp)
+// A (cp): Show IP Hierarchy: addNotify
+// [GUI Memory]: 149 MB (+7kb) [00:04:17]
+dismissDialog("Show IP Hierarchy"); // A (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), Data_To_Csi : csi_to_axis_0 (csi_to_axis_0.xci)]", 8); // B (D, cp)
+// A (cp): Show IP Hierarchy: addNotify
+dismissDialog("Show IP Hierarchy"); // A (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v)]", 12); // B (D, cp)
+// Elapsed time: 194 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cp): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,056 MB. GUI used memory: 73 MB. Current time: 7/30/20, 2:23:25 PM CST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (cp)
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // x (w, cp)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cp): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // q (ak, f)
+setFolderChooser("E:/");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("BACK", "< Back"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 10 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xc7s15"); // OverlayTextField (I, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7s15ftgb196-1 ; 196 ; 100 ; 8000 ; 16000 ; 10 ; 0 ; 20 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 2 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 9, "xc7s15ftgb196-1", 0); // x (Q, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// bx (f):  Create Project : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project project_1 E:/project_1 -part xc7s15ftgb196-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1585 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1229.344 ; gain = 0.000 
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 43 seconds
+dismissDialog("Create Project"); // bx (f)
+dismissDialog("New Project"); // f (cp)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 26 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Num_recognition_master"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir E:/project_1/project_1.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir E:/project_1/project_1.srcs/sources_1/new 
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 35 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open E:/project_1/project_1.srcs/sources_1/new/Num_recognition_master.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files E:/project_1/project_1.srcs/sources_1/new/Num_recognition_master.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 525 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 21 seconds
+String[] filenames31467 = {"E:/project_1/project_1.srcs/sources_1/new/Driver_Bayer_To_RGB.v", "E:/project_1/project_1.srcs/sources_1/new/Driver_Csi_To_Dvp.v", "E:/project_1/project_1.srcs/sources_1/new/Driver_IIC.v", "E:/project_1/project_1.srcs/sources_1/new/Driver_MIPI.v", "E:/project_1/project_1.srcs/sources_1/new/Num_recognition_master.v", "E:/project_1/project_1.srcs/sources_1/new/OV5647_Init.v", "E:/project_1/project_1.srcs/sources_1/new/Trigger_Generator.v", "E:/project_1/project_1.srcs/sources_1/new/grey_transform.v", "E:/project_1/project_1.srcs/sources_1/new/hdmi_num_test.v", "E:/project_1/project_1.srcs/sources_1/new/num0.v", "E:/project_1/project_1.srcs/sources_1/new/num1.v", "E:/project_1/project_1.srcs/sources_1/new/num2.v", "E:/project_1/project_1.srcs/sources_1/new/num3.v", "E:/project_1/project_1.srcs/sources_1/new/num4.v", "E:/project_1/project_1.srcs/sources_1/new/num5.v", "E:/project_1/project_1.srcs/sources_1/new/num6.v", "E:/project_1/project_1.srcs/sources_1/new/num7.v", "E:/project_1/project_1.srcs/sources_1/new/num8.v", "E:/project_1/project_1.srcs/sources_1/new/num9.v", "E:/project_1/project_1.srcs/sources_1/new/num_recognition.v", "E:/project_1/project_1.srcs/sources_1/new/rgb_transform.v", "E:/project_1/project_1.srcs/sources_1/new/rise_check.v"};
+setFileChooser(filenames31467);
+// Elapsed time: 11 seconds
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 35 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_MIPI (Driver_MIPI.v)]", 1); // B (D, cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_MIPI (Driver_MIPI.v), Driver_Csi_To_Dvp0 : Driver_Csi_To_Dvp (Driver_Csi_To_Dvp.v)]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_MIPI (Driver_MIPI.v), Driver_Bayer_To_RGB0 : Driver_Bayer_To_RGB (Driver_Bayer_To_RGB.v)]", 7); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_MIPI (Driver_MIPI.v), num_recognition0 : num_recognition (num_recognition.v)]", 11); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v)]", 13); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5647_Init (OV5647_Init.v)]", 16); // B (D, cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1185 ms.
+// bx (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bx (SwingUtilities.SharedOwnerFrame)
+// PAPropertyPanels.initPanels (D:/Vivado/2018.3/data/) elapsed time: 0.2s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, true); // O (Q, cp) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1392 ms.
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, true, false, false, false, true, false); // O (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_ADD_REPOSITORY, "Add Repository..."); // af (al, cp)
+setFolderChooser("E:/project_1/project_1.srcs/sources_1/ip");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  E:/project_1/project_1.srcs/sources_1/ip [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// bx (cp):  Refresh All IP Repositories : addNotify
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project_1/project_1.srcs/sources_1/ip'. 
+// c (cp): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (cp)
+// PAPropertyPanels.initPanels (D:/Vivado/2018.3/data/) elapsed time: 0.2s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true); // O (Q, cp) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true, false, false, false, true, false); // O (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_ADD_REPOSITORY, "Add Repository..."); // af (al, cp)
+// Elapsed time: 11 seconds
+setFolderChooser("E:/project_1/project_1.srcs/sources_1/ip/RAM_Line");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {e:/project_1/project_1.srcs/sources_1/ip E:/project_1/project_1.srcs/sources_1/ip/RAM_Line E:/project_1/project_1.srcs/sources_1/ip/AXIS_Data_RAM E:/project_1/project_1.srcs/sources_1/ip/clk_wiz_0 E:/project_1/project_1.srcs/sources_1/ip/clk_wiz_1 E:/project_1/project_1.srcs/sources_1/ip/csi2_d_phy_rx_0 E:/project_1/project_1.srcs/sources_1/ip/csi_to_axis_0 E:/project_1/project_1.srcs/sources_1/ip/rgb2dvi_0} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// bx (cp):  Refresh All IP Repositories : addNotify
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project_1/project_1.srcs/sources_1/ip'. 
+// c (cp): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 7, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 4, "User Repository", 0, false); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 4); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 4, "User Repository", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 8, "User Repository", 0, true); // O (Q, cp) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 8, "User Repository", 0, true, false, false, false, true, false); // O (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_ADD_REPOSITORY, "Add Repository..."); // af (al, cp)
+setFolderChooser("E:/project_1/project_1.srcs/sources_1/ip/AXIS_Data_RAM");
+// HOptionPane Error: ''e:\project_1\project_1.srcs\sources_1\ip\AXIS_Data_RAM' already specified. (File or Directory Already Specified)'
+selectButton("PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_FILE_OR_DIRECTORY_ALREADY_SPECIFIED_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_MIPI (Driver_MIPI.v), camera_clock : xil_defaultlib.clk_wiz_1]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 13 seconds
+dismissFileChooser();
+// 'h' command handler elapsed time: 17 seconds
+dismissDialog("Add Sources"); // c (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_MIPI (Driver_MIPI.v), camera_clock : xil_defaultlib.clk_wiz_1]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_MIPI (Driver_MIPI.v), camera_clock : xil_defaultlib.clk_wiz_1]", 2, false); // B (D, cp)
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_MIPI (Driver_MIPI.v), camera_clock : xil_defaultlib.clk_wiz_1]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+dismissDialog("Add Sources"); // c (cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceAtoD.CoreTreeTablePanel_ADD_IP_TO_REPOSITORY, "Add IP to Repository..."); // af (al, cp)
+dismissFileChooser();
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceAtoD.CoreTreeTablePanel_ADD_IP_TO_REPOSITORY, "Add IP to Repository..."); // af (al, cp)
+// Elapsed time: 13 seconds
+setFileChooser("E:/project_1/project_1.srcs/sources_1/ip/RAM_Line/RAM_Line.xml");
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -add_ip E:/project_1/project_1.srcs/sources_1/ip/RAM_Line/RAM_Line.xml -repo_path e:/project_1/project_1.srcs/sources_1/ip/RAM_Line 
+// Tcl Message: 0 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: 0 
+// a (cp): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// Elapsed time: 22 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cp): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,056 MB. GUI used memory: 77 MB. Current time: 7/30/20, 2:38:08 PM CST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (cp)
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.xpr", 1); // q (Q, cp)
+// Opening Vivado Project: C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1350 ms.
+// Tcl Message: open_project C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/DELL/Desktop/Camera_Demo/IP_Core'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'. 
+// Project name: Camera_Demo; location: C:/Users/DELL/Desktop/Camera_Demo; part: xc7s15ftgb196-1
+// [Engine Memory]: 1,155 MB (+102513kb) [00:23:07]
+dismissDialog("Open Project"); // bx (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v)]", 11); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 13); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num10_inst : xil_defaultlib.num10]", 24, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 13, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("hdmi_num_test.v", 4, 81); // cl (w, cp)
+selectCodeEditor("hdmi_num_test.v", 19, 49); // cl (w, cp)
+selectCodeEditor("hdmi_num_test.v", 0, 124); // cl (w, cp)
+selectCodeEditor("hdmi_num_test.v", 236, 264); // cl (w, cp)
+selectCodeEditor("hdmi_num_test.v", 21, 239); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 13); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("Camera_Demo.v", 30, 58); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("Camera_Demo.v", 298, 123); // cl (w, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 2); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "num_recognition_master"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 14 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num_recognition_master.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num_recognition_master.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 90 MB. Current time: 7/30/20, 2:41:05 PM CST
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, cp) - Node
+selectCodeEditor("Driver_MIPI.v", 6, 195); // cl (w, cp)
+selectCodeEditor("Driver_MIPI.v", 17, 191); // cl (w, cp)
+selectCodeEditor("Driver_MIPI.v", 2, 189); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 2); // k (j, cp)
+selectCodeEditor("Camera_Demo.v", 4, 191); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 39, 231, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af (al, Popup.HeavyWeightWindow)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("num_recognition_master.v", 13, 313); // cl (w, cp)
+selectCodeEditor("num_recognition_master.v", 14, 313, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("num_recognition_master.v", 48, 315); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v)]", 7, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top num_recognition_master [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 7, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Remove Sources"); // aE (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 7, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v)]", 1, true); // B (D, cp) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 1); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), camera_clock : clk_wiz_1 (clk_wiz_1.xci)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), num_recognition0 : num_recognition (num_recognition.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), num_recognition0 : num_recognition (num_recognition.v)]", 10, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 28 seconds
+selectCodeEditor("rgb_transform.v", 158, 85); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 406, 72); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+// Elapsed time: 22 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), num_recognition0 : num_recognition (num_recognition.v), checking : rise_check (rise_check.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), num_recognition0 : num_recognition (num_recognition.v), checking : rise_check (rise_check.v)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 135 seconds
+selectCodeEditor("rise_check.v", 176, 173); // cl (w, cp)
+selectCodeEditor("rise_check.v", 228, 214); // cl (w, cp)
+selectCodeEditor("rise_check.v", 112, 293); // cl (w, cp)
+selectCodeEditor("rise_check.v", 280, 238); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), grey : grey_transform (grey_transform.v)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), grey : grey_transform (grey_transform.v)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 6); // k (j, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("grey_transform.v", 281, 227); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 151, 73); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 134, 239); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 141, 193); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 144, 222); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 136, 245); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rise_check.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("num_recognition.v", 430, 137); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+selectCodeEditor("num_recognition.v", 231, 217); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+// Elapsed time: 36 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 12 seconds
+selectCodeEditor("hdmi_num_test.v", 311, 181); // cl (w, cp)
+selectCodeEditor("hdmi_num_test.v", 116, 217); // cl (w, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num0_inst : num0 (num0.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num0_inst : num0 (num0.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("num0.v", 132, 77); // cl (w, cp)
+selectCodeEditor("num0.v", 143, 106); // cl (w, cp)
+selectCodeEditor("num0.v", 87, 222); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 7); // k (j, cp)
+selectCodeEditor("hdmi_num_test.v", 84, 241); // cl (w, cp)
+selectCodeEditor("hdmi_num_test.v", 221, 265); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rise_check.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+selectCodeEditor("rgb_transform.v", 168, 244); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 294, 204); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 139, 219); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 237, 193); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 143, 222); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 249, 182); // cl (w, cp)
+// Elapsed time: 873 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rise_check.v", 5); // k (j, cp)
+// [GUI Memory]: 157 MB (+929kb) [00:49:56]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 6); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rise_check.v", 5); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+// Elapsed time: 85 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("rgb_transform.v", 163, 246); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 291, 259); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 4); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 4); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 91 MB. Current time: 7/30/20, 3:11:05 PM CST
+// Elapsed time: 322 seconds
+selectCodeEditor("num0.v", 134, 242); // cl (w, cp)
+selectCodeEditor("num0.v", 131, 104); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 3); // k (j, cp)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition_master.v", 1); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 27, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), Mini_HDMI_Driver : rgb2dvi_0 (rgb2dvi_0.xci)]", 3); // B (D, cp)
+// A (cp): Show IP Hierarchy: addNotify
+dismissDialog("Show IP Hierarchy"); // A (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 3); // k (j, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 4); // k (j, cp)
+// Elapsed time: 63 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition_master.v", 1); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v)]", 11, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v)]", 11, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("rgb_transform.v", 165, 199); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 322, 173); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 347, 244); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 3); // k (j, cp)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("rgb_transform.v", 1, 146); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 321, 158, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("rgb_transform.v", 322, 197); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 2, 241); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 2, 241, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("rgb_transform.v", 0, 12); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 179, 227); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 1, 197); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 341, 214, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("rgb_transform.v", 214, 209); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 7, 192); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 108, 221); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 16, 38); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 4, 56); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+// Elapsed time: 173 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), grey : grey_transform (grey_transform.v)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), grey : grey_transform (grey_transform.v)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 105 seconds
+selectCodeEditor("grey_transform.v", 128, 173); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 100, 177); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 4); // k (j, cp)
+selectCodeEditor("rgb_transform.v", 94, 329); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 3); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 2); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 1); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 0); // k (j, cp)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 1); // k (j, cp)
+selectCodeEditor("grey_transform.v", 136, 244); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 124, 172); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("grey_transform.v", 143, 265); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("grey_transform.v", 2, 176); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 1, 220); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 13, 176); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 0); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 90 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 1); // k (j, cp)
+// Elapsed time: 51 seconds
+selectCodeEditor("grey_transform.v", 73, 268); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 96, 266); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("grey_transform.v", 34, 103); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 38, 128); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 36, 151); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 37, 174); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 27, 331); // cl (w, cp)
+// Elapsed time: 171 seconds
+selectCodeEditor("grey_transform.v", 137, 123); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 127, 200); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 135, 200); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("grey_transform.v", 21, 259); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("grey_transform.v", 122, 270); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 47, 296); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("grey_transform.v", 61, 202); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 56, 202); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 11, 286); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("grey_transform.v", 52, 262); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("grey_transform.v", 37, 261, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af (al, Popup.HeavyWeightWindow)
+// Elapsed time: 38 seconds
+selectCodeEditor("grey_transform.v", 37, 337); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 3, 333); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 72, 245); // cl (w, cp)
+selectCodeEditor("grey_transform.v", 111, 242); // cl (w, cp)
+// Elapsed time: 73 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+// Elapsed time: 28 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), num_recognition0 : num_recognition (num_recognition.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), num_recognition0 : num_recognition (num_recognition.v), checking : rise_check (rise_check.v)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+selectCodeEditor("Driver_MIPI.v", 92, 338); // cl (w, cp)
+selectCodeEditor("Driver_MIPI.v", 262, 261); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 20); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 22, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 22, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 48 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 91 MB. Current time: 7/30/20, 3:41:06 PM CST
+// Elapsed time: 183 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 0); // k (j, cp)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num1_inst : num1 (num1.v)]", 16, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num0_inst : num0 (num0.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num0_inst : num0 (num0.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb_transform.v", 0); // k (j, cp)
+selectCodeEditor("rgb_transform.v", 371, 245); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 213 seconds
+selectCodeEditor("rgb_transform.v", 238, 241); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 285, 240); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 235, 240); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 284, 243); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 233, 239); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 282, 242); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("rgb_transform.v", 371, 245); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("rgb_transform.v", 925, 201); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 372, 246); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 366, 241); // cl (w, cp)
+selectCodeEditor("rgb_transform.v", 370, 244); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("rgb_transform.v", 307, 243); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grey_transform.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Driver_MIPI.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num_recognition.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_num_test.v", 4); // k (j, cp)
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : xil_defaultlib.hdmi_num_test]", 15, false); // B (D, cp)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : xil_defaultlib.hdmi_num_test]", 15, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : xil_defaultlib.hdmi_num_test]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : xil_defaultlib.hdmi_num_test]", 15, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+dismissFileChooser();
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+selectButton(RDIResource.HJFileChooserHelpers_JUMP_TO_CURRENT_WORKING_DIRECTORY, (String) null); // a (b, JDialog)
+// Elapsed time: 16 seconds
+setFileChooser("C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/hdmi_num_test.v");
+// 'dI' command handler elapsed time: 19 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/hdmi_num_test.v -to_files C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/hdmi_num_test.v -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/hdmi_num_test.v' with file 'C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/hdmi_num_test.v'. 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v)]", 14, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num1_inst : num1 (num1.v)]", 16, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "num0.v", 5); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num0_inst : num0 (num0.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num0_inst : num0 (num0.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num0_inst : num0 (num0.v)]", 15, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num1_inst : num1 (num1.v)]", 16, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num2_inst : num2 (num2.v)]", 17, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num3_inst : num3 (num3.v)]", 18, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num4_inst : num4 (num4.v)]", 19, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num5_inst : num5 (num5.v)]", 20, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num6_inst : num6 (num6.v)]", 21, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num7_inst : num7 (num7.v)]", 22, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num8_inst : num8 (num8.v)]", 23, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num9_inst : num9 (num9.v)]", 24, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num9_inst : num9 (num9.v)]", 24, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+dismissFileChooser();
+// 'dI' command handler elapsed time: 9 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num9_inst : num9 (num9.v)]", 24, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num0_inst : num0 (num0.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num0_inst : num0 (num0.v)]", 15, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num0.v");
+// 'dI' command handler elapsed time: 3 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num0.v -to_files C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num0.v -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num0.v' with file 'C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num0.v'. 
+// bx (cp):  Replace File : addNotify
+dismissDialog("Replace File"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num1_inst : num1 (num1.v)]", 16, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num1.v");
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num1.v -to_files C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num1.v -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file 'C:/Users/DELL/Desktop/Digital-Recognition-master/project/spartan_cam.srcs/sources_1/imports/new/num1.v' with file 'C:/Users/DELL/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/new/num1.v'. 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, num_recognition_master (num_recognition_master.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), rgb_transform0 : rgb_transform (rgb_transform.v), num_show : hdmi_num_test (hdmi_num_test.v), num2_inst : num2 (num2.v)]", 17, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
