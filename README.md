@@ -1,4 +1,4 @@
-# Summerschool-Project-Ready
+# DigitalRecognition-Project-Ready
 A intro—project of FPGA
 
 一.概述：
